@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 348" width="700" height="348">
+  <defs>
+    <linearGradient id="bar" x1="0" x2="1">
+      <stop offset="0%" stop-color="#8B6F3E"/><stop offset="100%" stop-color="#E8C547"/>
+    </linearGradient>
+    <style>
+      .name { font-family: Georgia, serif; font-size: 16px; fill: #C9A227; letter-spacing: 2px; }
+      .desc { font-family: Georgia, serif; font-size: 11px; fill: #8b949e; font-style: italic; }
+      .val  { font-family: Georgia, serif; font-size: 18px; fill: #4FC3F7; }
+      .head { font-family: Georgia, serif; font-size: 13px; fill: #4FC3F7; letter-spacing: 4px; }
+    </style>
+  </defs>
+  <rect width="700" height="348" rx="10" fill="#0d1117" stroke="#2c3b52"/>
+  <text x="30" y="26" class="head">⚜ ATTRIBUTES ⚜</text>
+  <text x="30" y="60" class="name">VIGOR</text>
+  <text x="30" y="76" class="desc">never giving up on a bug</text>
+  <rect x="230" y="46" width="380" height="18" rx="3" fill="#161b22" stroke="#2c3b52"/>
+  <rect x="230" y="46" width="376" height="18" rx="3" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="376" begin="0.0s" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    <animate attributeName="opacity" values="1;0.75;1" begin="2.0s" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="640" y="60" class="val">99
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="1.8s" fill="freeze"/>
+  </text>
+  <text x="30" y="108" class="name">FAITH</text>
+  <text x="30" y="124" class="desc">optimism</text>
+  <rect x="230" y="94" width="380" height="18" rx="3" fill="#161b22" stroke="#2c3b52"/>
+  <rect x="230" y="94" width="342" height="18" rx="3" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="342" begin="0.3s" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    <animate attributeName="opacity" values="1;0.75;1" begin="2.3s" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="640" y="108" class="val">90
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="2.1s" fill="freeze"/>
+  </text>
+  <text x="30" y="156" class="name">ARCANE</text>
+  <text x="30" y="172" class="desc">modding</text>
+  <rect x="230" y="142" width="380" height="18" rx="3" fill="#161b22" stroke="#2c3b52"/>
+  <rect x="230" y="142" width="266" height="18" rx="3" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="266" begin="0.6s" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    <animate attributeName="opacity" values="1;0.75;1" begin="2.6s" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="640" y="156" class="val">70
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="2.4s" fill="freeze"/>
+  </text>
+  <text x="30" y="204" class="name">INTELLIGENCE</text>
+  <text x="30" y="220" class="desc">working with AI</text>
+  <rect x="230" y="190" width="380" height="18" rx="3" fill="#161b22" stroke="#2c3b52"/>
+  <rect x="230" y="190" width="247" height="18" rx="3" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="247" begin="0.9s" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    <animate attributeName="opacity" values="1;0.75;1" begin="2.9s" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="640" y="204" class="val">65
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="2.7s" fill="freeze"/>
+  </text>
+  <text x="30" y="252" class="name">MIND</text>
+  <text x="30" y="268" class="desc">coding</text>
+  <rect x="230" y="238" width="380" height="18" rx="3" fill="#161b22" stroke="#2c3b52"/>
+  <rect x="230" y="238" width="190" height="18" rx="3" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="190" begin="1.2s" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    <animate attributeName="opacity" values="1;0.75;1" begin="3.2s" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="640" y="252" class="val">50
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="3.0s" fill="freeze"/>
+  </text>
+  <text x="30" y="300" class="name">ENDURANCE</text>
+  <text x="30" y="316" class="desc">late-night sessions</text>
+  <rect x="230" y="286" width="380" height="18" rx="3" fill="#161b22" stroke="#2c3b52"/>
+  <rect x="230" y="286" width="380" height="18" rx="3" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="380" begin="1.5s" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    <animate attributeName="opacity" values="1;0.75;1" begin="3.5s" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="640" y="300" class="val">∞
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="3.3s" fill="freeze"/>
+  </text>
+</svg>

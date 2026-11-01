@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#1565C0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flameOuter" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1565C0"/>
+      <stop offset="60%" stop-color="#29B6F6"/>
+      <stop offset="100%" stop-color="#B3E5FC" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="flameInner" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#E1F5FE"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b2230"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <style>
+      .glow   { animation: pulse 2.4s ease-in-out infinite; transform-origin: 470px 230px; }
+      .fOuter { animation: flick 0.9s ease-in-out infinite alternate; transform-origin: 470px 250px; }
+      .fMid   { animation: flick 0.7s ease-in-out infinite alternate-reverse; transform-origin: 470px 250px; }
+      .fInner { animation: flick 0.5s ease-in-out infinite alternate; transform-origin: 470px 250px; }
+      .cape   { animation: sway 3.2s ease-in-out infinite; transform-origin: 300px 120px; }
+      .breath { animation: breathe 4s ease-in-out infinite; transform-origin: 300px 250px; }
+      .ember  { fill: #81D4FA; animation: rise 3s linear infinite; opacity: 0; }
+      .e2 { animation-delay: 0.6s; } .e3 { animation-delay: 1.2s; }
+      .e4 { animation-delay: 1.8s; } .e5 { animation-delay: 2.4s; }
+      .eyes { animation: blink 5s infinite; }
+      .title { font-family: Georgia, 'Times New Roman', serif; letter-spacing: 3px; }
+      .fadeText { animation: fade 4s ease-in-out infinite; }
+      @keyframes pulse   { 0%,100% { transform: scale(1); opacity: .85 } 50% { transform: scale(1.12); opacity: 1 } }
+      @keyframes flick   { 0% { transform: scale(1,1) skewX(0deg) } 100% { transform: scale(0.92,1.08) skewX(4deg) } }
+      @keyframes sway    { 0%,100% { transform: skewX(0deg) } 50% { transform: skewX(-3deg) } }
+      @keyframes breathe { 0%,100% { transform: scaleY(1) } 50% { transform: scaleY(1.015) } }
+      @keyframes rise    { 0% { transform: translate(0,0); opacity: 0 } 10% { opacity: 1 } 100% { transform: translate(12px,-150px); opacity: 0 } }
+      @keyframes blink   { 0%,92%,100% { opacity: 1 } 95% { opacity: 0 } }
+      @keyframes fade    { 0%,100% { opacity: .55 } 50% { opacity: 1 } }
+    </style>
+  </defs>
+
+  <!-- fundo -->
+  <rect width="800" height="300" fill="#0d1117"/>
+  <ellipse cx="470" cy="235" rx="260" ry="140" fill="url(#glow)" class="glow"/>
+
+  <!-- estrelas -->
+  <g fill="#B3E5FC" opacity="0.6">
+    <circle cx="80" cy="40" r="1.2"/><circle cx="160" cy="80" r="1"/><circle cx="640" cy="50" r="1.4"/>
+    <circle cx="720" cy="100" r="1"/><circle cx="560" cy="30" r="1"/><circle cx="240" cy="30" r="1.3"/>
+  </g>
+
+  <!-- chão -->
+  <path d="M0 255 Q200 240 400 250 T800 248 L800 300 L0 300 Z" fill="url(#ground)"/>
+
+  <!-- cavaleiro sentado (original) -->
+  <g class="breath">
+    <!-- capa -->
+    <path class="cape" d="M262 120 Q240 190 236 252 L338 252 Q332 190 318 120 Z" fill="#1a2433" stroke="#2c3b52" stroke-width="2"/>
+    <!-- corpo / armadura -->
+    <path d="M272 135 L328 135 L334 205 L266 205 Z" fill="#3a4658"/>
+    <path d="M290 140 L310 140 L306 200 L294 200 Z" fill="#C9A227" opacity="0.7"/>
+    <!-- pernas dobradas -->
+    <path d="M268 205 L340 210 L352 245 L330 250 L322 226 L270 226 Z" fill="#2b3545"/>
+    <!-- braço apoiado -->
+    <path d="M326 150 Q352 175 360 200 L348 205 Q338 182 320 168 Z" fill="#3a4658"/>
+    <!-- capuz -->
+    <path d="M300 78 Q326 82 332 112 Q332 135 300 140 Q268 135 268 112 Q274 82 300 78 Z" fill="#141c28" stroke="#2c3b52" stroke-width="2"/>
+    <path d="M300 96 Q318 100 320 118 Q318 132 300 134 Q282 132 280 118 Q282 100 300 96 Z" fill="#05070b"/>
+    <!-- olhos brilhando -->
+    <g class="eyes" fill="#4FC3F7">
+      <circle cx="292" cy="117" r="2.6"/>
+      <circle cx="308" cy="117" r="2.6"/>
+    </g>
+  </g>
+
+  <!-- espada fincada no chão (reta, ao lado do cavaleiro) -->
+  <g>
+    <rect x="376" y="140" width="6" height="112" fill="#9aa7b8"/>
+    <rect x="364" y="140" width="30" height="6" rx="2" fill="#C9A227"/>
+    <rect x="375" y="118" width="8" height="22" rx="2" fill="#5d4a2a"/>
+    <circle cx="379" cy="116" r="5" fill="#C9A227"/>
+  </g>
+
+  <!-- fogueira: troncos -->
+  <g>
+    <rect x="420" y="244" width="100" height="12" rx="6" fill="#4a3424" transform="rotate(-12 470 250)"/>
+    <rect x="420" y="244" width="100" height="12" rx="6" fill="#5b4030" transform="rotate(12 470 250)"/>
+    <ellipse cx="470" cy="256" rx="58" ry="7" fill="#2a2a2a"/>
+  </g>
+
+  <!-- chamas azuis -->
+  <path class="fOuter" d="M470 140 C500 180 520 210 505 248 L435 248 C420 210 445 185 470 140 Z" fill="url(#flameOuter)"/>
+  <path class="fMid" d="M470 168 C490 195 500 220 490 248 L450 248 C440 222 452 200 470 168 Z" fill="#29B6F6" opacity="0.85"/>
+  <path class="fInner" d="M470 196 C482 214 486 232 480 248 L460 248 C454 232 460 214 470 196 Z" fill="url(#flameInner)"/>
+
+  <!-- brasas -->
+  <circle class="ember"    cx="465" cy="200" r="2.2"/>
+  <circle class="ember e2" cx="478" cy="210" r="1.8"/>
+  <circle class="ember e3" cx="458" cy="215" r="1.6"/>
+  <circle class="ember e4" cx="484" cy="195" r="2"/>
+  <circle class="ember e5" cx="470" cy="220" r="1.5"/>
+
+  <!-- texto -->
+  <text x="655" y="150" text-anchor="middle" class="title fadeText" fill="#C9A227" font-size="22">REST HERE,</text>
+  <text x="655" y="180" text-anchor="middle" class="title fadeText" fill="#C9A227" font-size="22">TRAVELER</text>
+  <text x="655" y="208" text-anchor="middle" class="title" fill="#4FC3F7" font-size="12" opacity="0.8">the next bonfire awaits</text>
+</svg>
