@@ -29,14 +29,9 @@
 
 ### 📜 Attributes
 
-| Attribute | Level | |
-|---|---|---|
-| **Vigor** *(never giving up on a bug)* | 99 | ▰▰▰▰▰▰▰▰▰▰ |
-| **Faith** *(optimism)* | 90 | ▰▰▰▰▰▰▰▰▰▱ |
-| **Arcane** *(modding)* | 70 | ▰▰▰▰▰▰▰▱▱▱ |
-| **Intelligence** *(working with AI)* | 65 | ▰▰▰▰▰▰▱▱▱▱ |
-| **Mind** *(coding)* | 50 | ▰▰▰▰▰▱▱▱▱▱ |
-| **Endurance** *(late-night sessions)* | ∞ | ▰▰▰▰▰▰▰▰▰▰ |
+<p align="center">
+  <img src="./attributes.svg" alt="Animated attributes" />
+</p>
 
 ---
 
@@ -94,15 +89,8 @@
 
 ---
 
-## 🐉 The Blue Flame Serpent
-
-*A serpent of azure fire that devours every day of effort, and grows hungrier the more you commit.*
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TarnishedAutistic/TarnishedAutistic/output/blue-flame.svg" alt="Blue flame serpent eating contributions" />
+  <img src="./tarnished-bonfire.svg" alt="A hooded knight resting by a blue bonfire" />
 </p>
 
----
-
 <h3 align="center">⚜️ BUG VANQUISHED ⚜️</h3>
-<p align="center"><i>Rest here a while, traveler. The next bonfire awaits.</i> 🔥</p>
