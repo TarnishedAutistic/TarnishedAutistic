@@ -18,18 +18,14 @@
 </p>
 
 <p align="center">
-  <img src="./attributes_1.svg" alt="Animated attributes" />
+  <img src="./attributes.svg" alt="Animated attributes" />
 </p>
 
 <p align="center"><img src="./tarnished-divider.svg" alt="divider" /></p>
 
-## ⚔️ Equipment
-
-**Right Armament:** 🤖 Claude AI
-> *A spirit of knowledge bound to the wielder. Answers when summoned, and grows stronger the clearer the question.*
-
-**Left Armament:** 🛠️ VS Code
-> *A trusted shield. Has blocked more errors than anyone can count.*
+<p align="center">
+  <img src="./tarnished-equipment.svg" alt="Equipment" />
+</p>
 
 **Spells & Incantations**
 
@@ -45,27 +41,15 @@
 
 <p align="center"><img src="./tarnished-divider.svg" alt="divider" /></p>
 
-## 🗺️ Map of Bonfires
-
-*Each project is a bonfire. Some are lit, others still lie beyond the fog.*
-
-| Bonfire | Region | State |
-|---|---|---|
-| 🔥 *Coming soon* | First AI-made mod | 🌫️ Beyond the fog |
-| 🔥 *Coming soon* | Next experiment | 🌫️ Beyond the fog |
-
-> ⚠️ **Notice from the Covenant:** most relics found here were forged by AI (Claude and others) together with me.
+<p align="center">
+  <img src="./tarnished-bonfires.svg" alt="Map of Bonfires" />
+</p>
 
 <p align="center"><img src="./tarnished-divider.svg" alt="divider" /></p>
 
-## 📖 Item Description
-
-> **Journal of the Tarnished Student**
->
-> *A worn journal filled with failed experiments, half-finished mods and the occasional victory.*
-> *It is said that those who read it learn not how to avoid death, but how to rise after it.*
->
-> 🇧🇷 *Diário do Maculado Estudante: estudos, testes e experimentos com mods, jogos e IA.*
+<p align="center">
+  <img src="./tarnished-journal.svg" alt="Item Description" />
+</p>
 
 <p align="center"><img src="./tarnished-divider.svg" alt="divider" /></p>
 
@@ -78,7 +62,7 @@
 <p align="center"><img src="./tarnished-divider.svg" alt="divider" /></p>
 
 <p align="center">
-  <img src="./tarnished-bonfire_1.svg" alt="A hooded knight resting by a blue bonfire" />
+  <img src="./tarnished-bonfire.svg" alt="A hooded knight resting by a blue bonfire" />
 </p>
 
 <h3 align="center">⚜️ BUG VANQUISHED ⚜️</h3>
