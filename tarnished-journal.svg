@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="800" height="220">
+  <defs>
+    <linearGradient id="edge" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="800" y2="0">
+      <stop offset="0%" stop-color="#2c3b52"/><stop offset="50%" stop-color="#C9A227"/><stop offset="100%" stop-color="#2c3b52"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-800 0;800 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="orb"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="45%" stop-color="#4FC3F7"/><stop offset="100%" stop-color="#1565C0" stop-opacity="0"/></radialGradient>
+    <style>
+      .h { font-family: Georgia, serif; font-size: 13px; fill: #4FC3F7; letter-spacing: 4px; }
+      .t { font-family: Georgia, serif; font-size: 17px; fill: #C9A227; letter-spacing: 1px; }
+      .s { font-family: Georgia, serif; font-size: 11px; fill: #8b949e; letter-spacing: 3px; }
+      .d { font-family: Georgia, serif; font-size: 14px; fill: #c9d1d9; font-style: italic; }
+      .m { font-family: Georgia, serif; font-size: 13px; fill: #8b949e; font-style: italic; }
+    </style></defs>
+  <rect x="1" y="1" width="798" height="218" rx="10" fill="#0d1117" stroke="url(#edge)" stroke-width="2"/>
+  <text x="30" y="30" class="h">⚜ ITEM DESCRIPTION ⚜</text>
+  <!-- livro -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="3s" repeatCount="indefinite"/>
+    <ellipse cx="80" cy="115" rx="48" ry="40" fill="url(#orb)" opacity="0.35">
+      <animate attributeName="opacity" values="0.2;0.45;0.2" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <rect x="50" y="78" width="60" height="76" rx="4" fill="#3a2e22" stroke="#C9A227" stroke-width="2"/>
+    <rect x="56" y="84" width="48" height="64" rx="2" fill="none" stroke="#8B6F3E"/>
+    <polygon points="80,104 90,116 80,128 70,116" fill="#4FC3F7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </polygon>
+    <rect x="104" y="80" width="6" height="72" fill="#5d4a2a"/>
+  </g>
+  <text x="150" y="68" class="t">Journal of the Tarnished Student</text>
+    <text x="150" y="98" class="d">A worn journal filled with failed experiments, half-finished mods<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.462;1" dur="1.2999999999999998s" fill="freeze"/></text>
+    <text x="150" y="120" class="d">and the occasional victory. It is said that those who read it learn<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.611;1" dur="1.8s" fill="freeze"/></text>
+    <text x="150" y="142" class="d">not how to avoid death, but how to rise after it.<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.696;1" dur="2.3s" fill="freeze"/></text>
+  <text x="150" y="180" class="m">PT · Diário do Maculado Estudante: estudos, testes e experimentos com mods, jogos e IA.<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.759;1" dur="2.9000000000000004s" fill="freeze"/></text>
+</svg>
