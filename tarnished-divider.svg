@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 30" width="800" height="30">
+  <defs>
+    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="800" y2="0">
+      <stop offset="0%" stop-color="#C9A227" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#C9A227" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="w"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="50%" stop-color="#4FC3F7"/><stop offset="100%" stop-color="#4FC3F7" stop-opacity="0"/></radialGradient>
+  </defs>
+  <line x1="40" y1="15" x2="760" y2="15" stroke="url(#g)" stroke-width="1.5"/>
+  <polygon points="400,7 408,15 400,23 392,15" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+  <circle cx="400" cy="15" r="3" fill="#4FC3F7"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
+  <circle cx="100" cy="15" r="6" fill="url(#w)">
+    <animate attributeName="cx" values="60;740;60" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0;1;1;0" dur="7s" repeatCount="indefinite"/>
+  </circle>
+</svg>

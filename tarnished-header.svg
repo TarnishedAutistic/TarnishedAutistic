@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070a10"/>
+      <stop offset="100%" stop-color="#111826"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B3E5FC" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#B3E5FC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auraGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#29B6F6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#29B6F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="wispGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#81D4FA"/>
+      <stop offset="100%" stop-color="#1565C0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="360" y1="0" x2="860" y2="0">
+      <stop offset="0%" stop-color="#8B6F3E"/>
+      <stop offset="45%" stop-color="#E8C547"/>
+      <stop offset="50%" stop-color="#FFF6D5"/>
+      <stop offset="55%" stop-color="#E8C547"/>
+      <stop offset="100%" stop-color="#8B6F3E"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-500 0;500 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="fogGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#90A4AE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#90A4AE" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#90A4AE" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- céu -->
+  <rect width="900" height="320" fill="url(#sky)"/>
+
+  <!-- estrelas piscando -->
+  <g fill="#B3E5FC">
+    <circle cx="60" cy="40" r="1.3"><animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="330" cy="30" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="470" cy="60" r="1.2"><animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="35" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="70" r="1.4"><animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="90" r="0.9"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.6s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- lua -->
+  <circle cx="820" cy="60" r="60" fill="url(#moonGlow)"/>
+  <circle cx="820" cy="60" r="22" fill="#CFE8F5" opacity="0.85"/>
+  <circle cx="812" cy="55" r="4" fill="#B0CFE0" opacity="0.6"/>
+  <circle cx="828" cy="68" r="3" fill="#B0CFE0" opacity="0.6"/>
+
+  <!-- chão -->
+  <path d="M0 290 Q220 278 450 288 T900 284 L900 320 L0 320 Z" fill="#0b0f17"/>
+
+  <!-- aura atrás do personagem -->
+  <ellipse cx="190" cy="190" rx="120" ry="110" fill="url(#auraGrad)">
+    <animate attributeName="rx" values="110;128;110" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- ===== personagem original: o Andarilho Encapuzado ===== -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="4s" repeatCount="indefinite"/>
+
+    <!-- capa ao vento -->
+    <path fill="#16202e" stroke="#2c3b52" stroke-width="2"
+          d="M170 120 Q140 200 120 290 L260 290 Q240 200 210 120 Z">
+      <animate attributeName="d" dur="3.2s" repeatCount="indefinite"
+        values="M170 120 Q140 200 120 290 L260 290 Q240 200 210 120 Z;
+                M170 120 Q128 205 104 292 L252 288 Q246 205 210 120 Z;
+                M170 120 Q140 200 120 290 L260 290 Q240 200 210 120 Z"/>
+    </path>
+    <!-- detalhe rasgado da capa -->
+    <path fill="#0d1117" d="M140 290 L150 270 L160 290 Z M200 290 L212 268 L224 290 Z"/>
+
+    <!-- pernas -->
+    <rect x="164" y="248" width="22" height="42" rx="3" fill="#232c3a"/>
+    <rect x="194" y="248" width="22" height="42" rx="3" fill="#232c3a"/>
+    <rect x="160" y="282" width="28" height="9" rx="3" fill="#3a2e22"/>
+    <rect x="192" y="282" width="28" height="9" rx="3" fill="#3a2e22"/>
+
+    <!-- corpo / armadura -->
+    <path d="M162 134 L218 134 L226 250 L154 250 Z" fill="#3a4658"/>
+    <path d="M182 140 L198 140 L195 244 L185 244 Z" fill="#C9A227" opacity="0.75"/>
+    <rect x="156" y="196" width="68" height="8" rx="2" fill="#8B6F3E"/>
+    <circle cx="190" cy="200" r="6" fill="#4FC3F7">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- ombreiras -->
+    <ellipse cx="164" cy="140" rx="16" ry="9" fill="#4b586c"/>
+    <ellipse cx="216" cy="140" rx="16" ry="9" fill="#4b586c"/>
+
+    <!-- braço esquerdo -->
+    <path d="M152 144 Q142 180 150 222 L160 220 Q154 182 164 150 Z" fill="#3a4658"/>
+    <!-- braço direito segurando a espada -->
+    <path d="M214 144 Q236 132 246 124 L250 134 Q236 144 222 158 Z" fill="#3a4658"/>
+
+    <!-- capuz -->
+    <path d="M190 68 Q224 72 230 108 Q230 136 190 144 Q150 136 150 108 Q156 72 190 68 Z" fill="#111925" stroke="#2c3b52" stroke-width="2"/>
+    <path d="M190 74 L196 64 L184 64 Z" fill="#111925"/>
+    <path d="M190 90 Q210 94 212 112 Q210 128 190 131 Q170 128 168 112 Q170 94 190 90 Z" fill="#03050a"/>
+
+    <!-- olhos -->
+    <g fill="#4FC3F7">
+      <ellipse cx="182" cy="112" rx="3.2" ry="2.6">
+        <animate attributeName="ry" values="2.6;2.6;0.3;2.6;2.6" keyTimes="0;0.9;0.93;0.96;1" dur="5s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="198" cy="112" rx="3.2" ry="2.6">
+        <animate attributeName="ry" values="2.6;2.6;0.3;2.6;2.6" keyTimes="0;0.9;0.93;0.96;1" dur="5s" repeatCount="indefinite"/>
+      </ellipse>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- espada fincada, com brilho correndo na lâmina -->
+  <g>
+    <rect x="243" y="144" width="7" height="146" fill="#9aa7b8"/>
+    <rect x="243" y="144" width="7" height="22" fill="#FFFFFF" opacity="0.7">
+      <animate attributeName="y" values="144;268;144" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="228" y="138" width="37" height="7" rx="2" fill="#C9A227"/>
+    <rect x="242" y="116" width="9" height="22" rx="2" fill="#5d4a2a"/>
+    <circle cx="246.5" cy="113" r="5" fill="#C9A227"/>
+  </g>
+
+  <!-- espírito azul orbitando -->
+  <g>
+    <circle r="14" fill="url(#wispGrad)">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M80 170 a110 50 0 1 1 220 0 a110 50 0 1 1 -220 0"/>
+      <animate attributeName="r" values="12;16;12" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="7" fill="url(#wispGrad)" opacity="0.6">
+      <animateMotion dur="6s" begin="-0.25s" repeatCount="indefinite" path="M80 170 a110 50 0 1 1 220 0 a110 50 0 1 1 -220 0"/>
+    </circle>
+    <circle r="4" fill="url(#wispGrad)" opacity="0.35">
+      <animateMotion dur="6s" begin="-0.5s" repeatCount="indefinite" path="M80 170 a110 50 0 1 1 220 0 a110 50 0 1 1 -220 0"/>
+    </circle>
+  </g>
+
+  <!-- brasas subindo -->
+  <g fill="#81D4FA">
+    <circle cx="150" cy="290" r="2"><animate attributeName="cy" values="290;120" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="230" cy="290" r="1.6"><animate attributeName="cy" values="290;100" dur="5s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="5s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="190" cy="290" r="1.4"><animate attributeName="cy" values="290;140" dur="3.5s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="3.5s" begin="2s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="290" r="1.8"><animate attributeName="cy" values="290;130" dur="4.5s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="4.5s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="270" cy="290" r="1.5"><animate attributeName="cy" values="290;150" dur="3.8s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="3.8s" begin="1.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- névoa passando -->
+  <rect x="-300" y="250" width="600" height="50" fill="url(#fogGrad)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;1200 0" dur="14s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="-300" y="265" width="500" height="40" fill="url(#fogGrad)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;1200 0" dur="18s" begin="-7s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- título -->
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="600" y="135" font-size="44" letter-spacing="2" fill="url(#gold)">TarnishedAutistic</text>
+
+    <line x1="440" y1="155" x2="760" y2="155" stroke="#C9A227" stroke-width="1.5">
+      <animate attributeName="x1" values="600;440" dur="1.5s" fill="freeze"/>
+      <animate attributeName="x2" values="600;760" dur="1.5s" fill="freeze"/>
+    </line>
+    <polygon points="600,149 606,155 600,161 594,155" fill="#4FC3F7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </polygon>
+
+    <text x="600" y="190" font-size="16" letter-spacing="4" fill="#4FC3F7">SOFTWARE ENGINEERING STUDENT
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.5;1" dur="2s" fill="freeze"/>
+    </text>
+    <text x="600" y="222" font-size="15" font-style="italic" fill="#c9d1d9">Modding games with AI, one bonfire at a time.
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="3s" fill="freeze"/>
+    </text>
+    <text x="600" y="252" font-size="13" letter-spacing="2" fill="#8b949e">PORTUGUÊS • ENGLISH • 日本語
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.7;1" dur="3.5s" fill="freeze"/>
+    </text>
+  </g>
+</svg>
